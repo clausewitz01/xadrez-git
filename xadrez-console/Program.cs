@@ -9,12 +9,17 @@ using xadrez;
 namespace xadrez_console {
     class Program {
         static void Main(string[] args) {
-            Posicao P;
 
-            Tabuleiro tab = new Tabuleiro(8, 8);
+            try {
+                Tabuleiro tab = new Tabuleiro(8, 8);
 
-            tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 1));
-            Tela.imprimirTabuleiro(tab);
+                tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 1));
+                tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 1));
+                Tela.imprimirTabuleiro(tab);
+            }
+            catch(TabuleiroException e) {
+                Console.WriteLine(e.Message);
+                    }
 
             Console.ReadLine();
         } 
