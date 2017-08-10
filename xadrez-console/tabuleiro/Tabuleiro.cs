@@ -53,7 +53,7 @@ namespace tabuleiro {
             return true;
         }
         public void validarPosicao(Posicao pos) {
-            //!= nao
+            //! = nao
             if (!posicaoValida(pos)) {
                 throw new TabuleiroException("posicao invalida");
 
