@@ -67,7 +67,7 @@ namespace tabuleiro {
         public void validarPosicao(Posicao pos) {
             //! = nao
             if (!posicaoValida(pos)) {
-                throw new TabuleiroException("posicao invalida");
+                throw new TabuleiroException("posicao invalida");//se a posicao esta dentro do tabuleiro
 
             }
         }
