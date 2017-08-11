@@ -39,7 +39,7 @@ namespace tabuleiro {
         public void colocarPeca(Peca p, Posicao pos) {
             //posicao eh um atributo da classe peca
             if (existePeca(pos)) {
-                throw new TabuleiroException("j'a existe uma peca nessa posicao");
+                throw new TabuleiroException("ja existe uma peca nessa posicao");
             }
             pecas[pos.linha, pos.coluna] = p;
             p.posicao = pos;
