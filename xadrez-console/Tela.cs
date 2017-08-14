@@ -21,6 +21,7 @@ namespace xadrez_console {
             }
             else {
                 Console.WriteLine("XEQUEMATE!");
+                Console.WriteLine("Vencedor: " + partida.jogadorAtual);
             }
         }
 
